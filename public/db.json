@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "655c34eec2effd90c57c78d8",
+    "id": 1,
+    "title": "Set Alaram",
+    "description": "seting alaram to wakeup early",
+    "creator": "Jane Doe",
+    "createdOn": "Thu Jan 05 2023 05:30:00 GMT-0500 (Eastern Standard Time)",
+    "priority": "Medium",
+    "status": "completed"
+  },
+  {
+    "_id": "655f9b04d985b582431ae7ed",
+    "id": 2,
+    "title": "Wakeup Time",
+    "description": "time to wakeup daily",
+    "creator": "Jeevan Kumar Konduru",
+    "createdOn": "Wed Nov 22 2023 11:30:00 GMT-0500 (Eastern Standard Time)",
+    "priority": "High",
+    "status": "in_progress"
+  },
+  {
+    "_id": "6567da94289c5a804a756934",
+    "id": 3,
+    "title": "Finish Report",
+    "description": "Completing the quarterly financial report",
+    "creator": "John Smith",
+    "createdOn": "Mon Mar 20 2023 10:45:00 GMT-0400 (Eastern Daylight Time)",
+    "priority": "High",
+    "status": "in_progress"
+  },
+  {
+    "_id": "6567dad2289c5a804a756935",
+    "id": 5,
+    "title": "Grocery Shopping",
+    "description": "Buy fruits, vegetables, and household items",
+    "creator": "Alice Johnson",
+    "createdOn": "Tue Feb 15 2023 15:20:00 GMT-0500 (Eastern Standard Time)",
+    "priority": "Low",
+    "status": "pending"
+  },
+  {
+    "_id": "6567daeb289c5a804a756936",
+    "id": 7,
+    "title": "Gym Session",
+    "description": "Workout for an hour at the gym",
+    "creator": "Robert Anderson",
+    "createdOn": "Fri Apr 07 2023 18:00:00 GMT-0400 (Eastern Daylight Time)",
+    "priority": "Medium",
+    "status": "not_started"
+  },
+  {
+    "_id": "6567db15289c5a804a756937",
+    "id": 9,
+    "title": "Read Book",
+    "description": "Finish the novel 'The Silent Forest'",
+    "creator": "Emily White",
+    "createdOn": "Sat Mar 04 2023 09:15:00 GMT-0500 (Eastern Standard Time)",
+    "priority": "High",
+    "status": "completed"
+  },
+  {
+    "_id": "6567db5c289c5a804a756939",
+    "id": 11,
+    "title": "Project Meeting",
+    "description": "Discuss project updates with the team",
+    "creator": "Michael Brown",
+    "createdOn": "Wed Feb 22 2023 14:30:00 GMT-0500 (Eastern Standard Time)",
+    "priority": "Medium",
+    "status": "in_progress"
+  },
+  {
+    "_id": "6567db88289c5a804a75693a",
+    "id": 13,
+    "title": "Learn Guitar",
+    "description": "Practice chords and play a new song",
+    "creator": "Sophia Davis",
+    "createdOn": "Sun Apr 09 2023 19:45:00 GMT-0400 (Eastern Daylight Time)",
+    "priority": "Low",
+    "status": "not_started"
+  },
+  {
+    "_id": "6567db9a289c5a804a75693b",
+    "id": 15,
+    "title": "Write Blog Post",
+    "description": "Create a blog post on productivity tips",
+    "creator": "Daniel Wilson",
+    "createdOn": "Mon Jan 30 2023 12:10:00 GMT-0500 (Eastern Standard Time)",
+    "priority": "High",
+    "status": "pending"
+  },
+  {
+    "_id": "6567dbb6289c5a804a75693c",
+    "id": 17,
+    "title": "Family Dinner",
+    "description": "Plan and prepare a special dinner for the family",
+    "creator": "Olivia Miller",
+    "createdOn": "Sat Mar 18 2023 19:00:00 GMT-0400 (Eastern Daylight Time)",
+    "priority": "Medium",
+    "status": "not_started"
+  },
+  {
+    "_id": "6567dbcd289c5a804a75693d",
+    "id": 19,
+    "title": "Review Presentation",
+    "description": "Review and finalize slides for the upcoming presentation",
+    "creator": "David Taylor",
+    "createdOn": "Thu Apr 13 2023 16:50:00 GMT-0400 (Eastern Daylight Time)",
+    "priority": "High",
+    "status": "pending"
+  },
+  {
+    "_id": "6567dbde289c5a804a75693e",
+    "id": 21,
+    "title": "Plan Weekend Trip",
+    "description": "Research and plan a weekend getaway",
+    "creator": "Emma Clark",
+    "createdOn": "Fri Feb 10 2023 08:30:00 GMT-0500 (Eastern Standard Time)",
+    "priority": "Low",
+    "status": "completed"
+  }
+]

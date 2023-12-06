@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        /* coloring used from https://www.canva.com/colors/color-palettes/steel-cutlery/  " */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color:black;
+    text-align: center;
+}
+
+/* Apply a background color to the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#FCFAF0;
+    line-height: 1.6;
+}
+
+/* Style the header */
+.header {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Style the navigation */
+.nav-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Style the main content sections */
+.section {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.section-about {
+    background-color: #B5B2B0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+.section-projects {
+    background-color: #FCFAF0;
+}
+
+.project {
+    background-color: #8A9EA0;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px
+}
+/* sytle the experience section */
+#experience{
+    background-color: #FCFAF0;
+}
+.experience {
+    background-color: #99B0B0;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*  style the article section */
+
+.section-article{
+    display: grid;
+    background-color:#FCFAF0 ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap:0.1%;
+    grid-template-areas:
+    "article1 article1"
+    "article2 article3"
+}
+#article1{
+    overflow-y: auto;
+    grid-area: article1;
+    background-color: #99B0B0;
+}
+#article2{
+    overflow-y: auto;
+    grid-area: article2;
+    background-color: #B5B2B0;
+}
+#article3{
+    overflow-y: auto;
+    grid-area: article3;
+    background-color: #8A9EA0;
+}
+.article{
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Style the footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.social-link{
+    color:white;
+}
+
+/* responsive screen styling */
+@media  only screen and (max-width:500px) {
+
+    .section-article{
+        grid-template-areas:
+        "article1 article1"
+        "article2 article2"
+        "article3 article3"
+    }
+    .article{
+        background-color: #B5B2B0;
+    }
+
+    #article1{
+        background-color: #99B0B0;
+    }
+    #article2{
+        background-color: #8A9EA0;
+    }
+    #article3{
+        background-color: #8A9EA0;
+    }
+    .project {
+        background-color: #FCFAF0;
+    }
+    .section-projects {
+        background-color: #99B0B0;
+    }
+    .experience {
+        background-color: #8A9EA0;
+    }
+    
+   
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">Hello, I'm Jeev</h1>
+            <p class="header-subtitle">Web Developer | Creative Enthusiast | Problem Solver</p>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section section-about">
+            <div class="section-content">
+                <div class="about-content">
+                    <img src="https://images.unsplash.com/photo-1700524600048-b36e942e5dc1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8fA%3D%3D" alt="Profile Image" class="about-image">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="description">I'm a passionate web developer with a love for creating beautiful and functional websites. Let's build something amazing together.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-projects">
+            <div class="section-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="project">
+                    <h3 class="project-title">Project 1</h3>
+                    <p class="project-description">Develop hotel management systme to interact with patient..</p>
+                    <a href="project1-link" class="project-link">View Project</a>
+                </div>
+                <div class="project">
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-description">Analyize and predict googlemaos recommendation system based on customer charachteritics....</p>
+                    <a href="project2-link" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-experience">
+            <div class="section-content">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience">
+                    <h3 class="experience-title">Company XYZ</h3>
+                    <p class="experience-description">Software Engineer (2021-Present)</p>
+                </div>
+                <div class="experience">
+                    <h3 class="experience-title">Startup ABC</h3>
+                    <p class="experience-description">Internship (2020)</p>
+                </div>
+            </div>
+        </section>
+        <h2 class="section-title"> Popular Articles </h2>
+        <section class="section section-article" >
+            
+            <article class="article" id="article1">
+                This page shares my best articles to read on topics like health, happiness, creativity, productivity and more. The central question that drives my work is, “How can we live better?” To answer that question, I like to write about science-based ways to solve practical problems.
+            </article>
+            <article class="article" id="article2">
+                
+                Within a year, he had transitioned to Disney’s magic shop, where he learned tricks from the older employees. He experimented with jokes and tried out simple routines on visitors. Soon he discovered that what he loved was not performing magic but performing in general. He set his sights on becoming a comedian.
+
+Beginning in his teenage years, he started performing in little clubs around Los Angeles. The crowds were small and his act was short. He was rarely on stage for more than five minutes.
+            </article>
+            <article class="article" id="article3">
+                He spent another decade experimenting, adjusting, and practicing. He took a job as a television writer and, gradually, he was able to land his own appearances on talk shows. By the mid-1970s, he had worked his way into being a regular guest on The Tonight Show and Saturday Night Live.
+
+            </article>
+        </section>
+
+        <section id="contact" class="section section-contact">
+            <div class="section-content">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="contact-description">Let's connect and create something amazing together.</p>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" >
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" ></textarea>
+                        </div>
+                        <div>
+                        <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+       
+
+    </main>           
+    
+    <footer class="footer">
+        <ul class="footer-social">
+            <li><a href="https://twitter.com/" class="social-link">Twitter</a></li>
+            <li><a href="https://github.com/" class="social-link">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" class="social-link">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
